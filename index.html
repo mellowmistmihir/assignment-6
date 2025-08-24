@@ -10,15 +10,135 @@
 <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-
+    <header class="w-11/12 mx-auto">
+       <nav>
+        <div class="navbar bg-base-100">
+  <div class="navbar-start gap-3">
+     <img src="images/logo.webp" alt="">
+    <a class=" text-3xl font-bold text-black">Peddy</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>Shop</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end ">
+   <img class="h-10 p-1 border-2 rounded-full " src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000" alt="">
+  </div>
+</div>
+       </nav>
+  <div class="text-center space-y-5 md:mt-20 py-5">
+           <h2 class="text-xl text-gray-400 ">Bringing Families Together ❤️‍🔥 </h2>
+           <p class="text-5xl font-extrabold ">Your Path to Adoption <br> Starts Here</p>
+           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+           <button class="btn bg-[#0E7A81] text-white">View More</button>
+  </div>
+  <div class="md:flex justify-center"><img src="images/pet.webp" alt=""></div>
     </header>
-    <main>
+    <main class="w-11/12 mx-auto">
+         <section class=" md:mt-20 ">
+            <div class="text-center space-y-5">
+                <h2 class="text-2xl font-bold">Adopt  Your  Best Friend</h2>
+                  <p class="text-gray-400">It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                  </p>
+            </div>
+            <div id="categories" class="flex justify-center mt-10 gap-5">
+
+            </div>
+         </section>
+         <section id="pets"  class="mt-10 grid md:grid-cols-5 gap-5 ">
+            
+           
+               
+         </section >
+          <div class="flex items-center justify-between bg-white px-4 py-2 mt-10">
+ 
+  <h2 class="font-bold text-2xl ">Best Deal For you</h2>
+
+ 
+  <button class="bg-teal-700 hover:bg-teal-800 text-white px-4 py-2 rounded-md">
+    Sort by Price
+  </button>
+</div>
+         <section id="addpets" class="mt-10 grid md:grid-cols-4 space-x-5 border border-3 shadow rounded-xl h-[700px] md:w-9/12 p-5"></section>
+                
+         </section>
+        
+
 
     </main>
-    <footer>
-        
-    </footer>
+  <!-- Open the modal using ID.showModal() method -->
+<button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   <div id="modal-content"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn text-white bg-[#0E7A81]">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+     <footer class="flex flex-wrap justify-around p-10 bg-black text-gray-400 mt-10">
+    <!-- Left Section -->
+    <div class="max-w-xs flex flex-col space-y-4">
+      <h3  class="text-teal-400 text-2xl font-semibold mb-4 flex"><img class="mr-3 w-10 "  src="images/logo.webp" alt="">Peddy</h3>
+      <p>Location: 28 Washington 165, NY CA 54003</p>
+      <p>Phone: +315 86 9447 25</p>
+      <p>Email: info@peddy.com</p>
+      <p>Opening hours: 9:00 AM - 5:00 PM</p>
+
+      <div class="flex space-x-4 mt-4">
+        <a href="#" aria-label="Facebook">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+        </a>
+        <a href="#" aria-label="X">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="X" />
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="max-w-xs flex flex-col space-y-2">
+      <h3 class="text-teal-400 text-xl font-semibold mb-4">Useful Links</h3>
+      <a href="#" class="hover:text-teal-400 transition">Home</a>
+      <a href="#" class="hover:text-teal-400 transition">About Us</a>
+      <a href="#" class="hover:text-teal-400 transition">Animals</a>
+      <a href="#" class="hover:text-teal-400 transition">Foundation</a>
+      <a href="#" class="hover:text-teal-400 transition">Contact</a>
+    </div>
+
+    <!-- Subscribe Form -->
+    <div class="max-w-xs flex flex-col space-y-4">
+      <h3 class="text-teal-400 text-xl font-semibold mb-4">Drop a Message</h3>
+      <form class="flex">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="flex-grow px-3 py-2 rounded-l-md border border-gray-700 bg-gray-800 text-gray-300 focus:outline-none focus:border-teal-400"
+        />
+        <button
+          type="submit"
+          class="bg-teal-600 hover:bg-teal-700 transition px-5 rounded-r-md text-white"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </footer>
     <script src="js/home.js"></script>
 </body>
 </html> 
+
+
+
